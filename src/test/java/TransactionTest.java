@@ -54,7 +54,7 @@ public class TransactionTest {
     public void test() throws Exception {
         List<Callable<Integer>> callables = new ArrayList<Callable<Integer>>();
 
-        for (int i = 0; i < 8; i++) {
+        for (int i = 0; i < 20; i++) {
             final int j = i;
             final HazelcastInstance hz = hazelcast;
             callables.add(new Callable<Integer>() {
